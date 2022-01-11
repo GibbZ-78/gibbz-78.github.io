@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<!-- 
+*********************************************
+*                                           *
+*        Google search page THPized         *
+*                                           *
+*               google.html                 *
+*                                           *
+*            (c) 2022 JB Vidal              *
+*         THP Développeur Hiver 22          *
+*                                           *
+********************************************* 
+-->
+<!--[if lt IE 7]>   <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>      <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>      <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>   <html class="no-js"> <![endif]-->
+<!--[if lt IE 9]>
+  <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Here is my very first deliverable within the Developer curriculum of The Hacking Project training program. Enjoy !"
+    />
+    <meta
+      name="keywords"
+      content="Google, search, html, css, javascript, thp, hacking, project,"
+    />
+    <meta
+      name="author"
+      content="JEan-Baptiste VIDAL (jb.vidal@gmail.com) for THP"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Google</title>
+    <meta
+      name="description"
+      content="The wellknown Google search page... Just THPized ;-)"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg" href="/media/google_favicon.svg" />
+    <!--
+            Finally downloaded the "search" and "close" PNG from Material Icons instead of embedding them via the following link: 
+            <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        -->
+    <link rel="stylesheet" href="/styles/google.css" />
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <header>
+      <nav class="gNavBar">
+        <div class="gNavBarEmptyContainer"></div>
+        <div class="gNavBarLinksContainer">
+          <div>
+            <a
+              class="gNavBarStandardLink"
+              href="https://www.google.com/intl/fr/gmail/about/"
+              >Gmail</a
+            >
+          </div>
+          <div>
+            <a
+              class="gNavBarStandardLink"
+              href="https://www.google.fr/imghp?hl=fr"
+              >Images</a
+            >
+          </div>
+          <div class="gNavBarSVGLinkContainer">
+            <a
+              class="gNavBarSVGLink"
+              href="https://www.google.fr/intl/fr/about/products"
+            >
+              <img
+                src="/media/google_3x3dots_black.svg"
+                alt="3x3 black dots matrix used as a link to Google Apps"
+              />
+            </a>
+          </div>
+          <div>
+            <a
+              class="gNavBarButtonLink"
+              href="https://accounts.google.com/signin/v2/identifier?hl=fr"
+              >Connexion</a
+            >
+          </div>
+        </div>
+      </nav>
+    </header>
+    <section class="gSectionEmpty"></section>
+    <section class="gSectionLogo">
+      <img
+        src="/media/google_logo_THPized_color_272x92.png"
+        alt="Logo Google"
+      />
+    </section>
+    <section class="gSectionSearchForm">
+      <form action="https://www.google.fr/search?" method="GET">
+        <div class="gSectionSearchContainer">
+          <div class="gSectionSearchMagnifier">
+            <img
+              src="/media/google_outline_search_black_24dp.png"
+              alt="Search (Material icon)"
+            />
+          </div>
+          <div class="gSectionSearchInput">
+            <input type="search" name="q" id="gInputSearch" autocomplete="on" />
+          </div>
+          <div class="gSectionSearchClose" id="gMyCloseIcon">
+            <img
+              src="/media/google_outline_close_black_24dp.png"
+              alt="Close (Material icon)"
+            />
+          </div>
+          <div class="gSectionSearchVocal">
+            <img
+              src="/media/google_mic.png"
+              alt="Mic to launch vocal search (normally SVG but PNG used here instead)"
+            />
+          </div>
+        </div>
+        <div class="gSectionSearchButtons">
+          <input
+            type="submit"
+            class="gSearchButton"
+            id="gStandardSearcButton"
+            value="Recherche Google"
+          />
+          <input
+            type="submit"
+            class="gSearchButton"
+            id="gLuckySearchButton"
+            value="J'ai de la chance"
+          />
+        </div>
+      </form>
+    </section>
+    <section class="gSectionComplementaryInfo">
+      <div>
+        Démarrez 2022 en suivant des
+        <a
+          href="https://learndigital.withgoogle.com/ateliersnumeriques/courses"
+          target="_blank"
+          >formations au numérique</a
+        >
+        avec Google
+      </div>
+    </section>
+    <footer class="gFooter">
+      <div class="gFooterUpper">France</div>
+      <div class="gFooterLower">
+        <div class="gFooterLowerLeft">
+          <a href="https://about.google/" target="_blank">A propos</a>
+          <a href="https://ads.google.com/intl/fr_FR/home/" target="_blank"
+            >Publicité</a
+          >
+          <a
+            href="https://smallbusiness.withgoogle.com/intl/fr_fr/"
+            target="_blank"
+            >Entreprise</a
+          >
+          <a
+            href="https://www.google.com/search/howsearchworks/"
+            target="_blank"
+            >Comment fonctionne la recherche Google ?</a
+          >
+        </div>
+        <div class="gFooterLowerMiddle">
+          <img src="/media/google_zero_carbone.png" alt="Feuille verte" />
+          <a
+            href="https://sustainability.google/intl/fr/commitments-europe/"
+            target="_blank"
+            >Neutre en carbone depuis 2007</a
+          >
+        </div>
+        <div class="gFooterLowerRight">
+          <a
+            href="https://support.google.com/websearch/answer/7585859?p=fr_consumer_info&hl=fr"
+            target="_blank"
+            >Info consommateurs</a
+          >
+          <a href="https://policies.google.com/privacy?hl=fr" target="_blank"
+            >Confidentialité</a
+          >
+          <a href="https://policies.google.com/terms?hl=fr" target="_blank"
+            >Conditions</a
+          >
+          <a href="javascript:void(0);" id="gSetupMenu">Paramètres</a>
+        </div>
+      </div>
+      <div class="gFooterSetupMenu" id="hidden_menu">
+        <li>
+          <a href="https://www.google.fr/advanced_search?hl=fr" target="_blank"
+            >Recherche avancée</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://myaccount.google.com/intro/yourdata/search?utm_source=googlemenu"
+            target="_blank"
+            >Vos données dans la recherche Google</a
+          >
+        </li>
+        <li>
+          <a href="https://www.google.fr/preferences?hl=fr" target="_blank"
+            >Paramètres de recherche</a
+          >
+        </li>
+        <li>
+          <a href="https://www.google.fr/history/optout?hl=fr" target="_blank"
+            >Historique de recherche</a
+          >
+        </li>
+        <li>
+          <a
+            href="https://support.google.com/websearch/?p=ws_results_help&hl=fr"
+            target="_blank"
+            >Aide sur la recherche</a
+          >
+        </li>
+        <li>
+          <a
+            href="mailto:jb.vidal@gmail.com?subject='Sent from Google sibling page'&body='Hello, I just discovered your Google Search copy and I...'"
+            >Envoyer des commentaires</a
+          >
+        </li>
+        <li><a href="javascript:void(0);">Thème sombre : désactivé</a></li>
+      </div>
+    </footer>
+    <script src="/scripts/google.js" async defer></script>
+  </body>
+</html>
+<!-- 
+*****************************
+*                           *
+*        END OF CODE        *
+*                           *
+*****************************
+-->

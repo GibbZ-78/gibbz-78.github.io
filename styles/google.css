@@ -1,0 +1,377 @@
+/*********************************************/
+/*                                           */
+/*        Google search page THPized         */
+/*                                           */
+/*                google.css                 */
+/*                                           */
+/*            (c) 2022 JB Vidal              */
+/*         THP Développeur Hiver 22          */
+/*                                           */
+/*********************************************/
+
+/************/
+/* ALL TAGS */
+/************/
+
+* {
+  box-sizing: border-box;
+  /* --var-debug-div: 1px dashed; */
+  --var-debug-div: none;
+}
+
+/***********/
+/* GLOBALS */
+/***********/
+
+body {
+  font-family: roboto, arial, helvetica, sans-serif;
+  font-size: 14px;
+  margin: 0px;
+}
+
+/**********/
+/* HEADER */
+/**********/
+
+header {
+  border: var(--var-debug-div);
+  display: flex;
+  flex-direction: column;
+  padding: 6px;
+  border-style: none;
+  align-content: flex-end;
+  height: 10vh;
+}
+
+nav {
+  border: var(--var-debug-div);
+  display: flex;
+  justify-content: flex-end;
+  padding: 10px 5px;
+}
+
+/* Left container used to push gNavBarLinksContainer to the right */
+.gNavBarEmptyContainer {
+  border: var(--var-debug-div);
+  width: 75%;
+}
+
+.gNavBarLinksContainer {
+  border: var(--var-debug-div);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: auto;
+}
+
+/* Navbar links */
+.gNavBarStandardLink {
+  border: var(--var-debug-div);
+  color: #000;
+  opacity: 50%;
+  text-decoration: none;
+  margin: 5px 10px;
+}
+
+.gNavBarStandardLink:hover {
+  opacity: 75%;
+  text-decoration: underline;
+}
+
+/* Navbar 3x3 dotted matrix linkinf to Google Apps */
+.gNavBarSVGLinkContainer {
+  border: var(--var-debug-div);
+  opacity: 50%;
+  text-decoration: none;
+  vertical-align: top;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin: -10px 10px;
+}
+
+.gNavBarSVGLinkContainer:hover {
+  background-color: #eee;
+}
+
+.gNavBarSVGLink img {
+  position: relative;
+  height: 20px;
+  width: 20px;
+  top: 10px;
+  left: 10px;
+}
+
+/* Navbar connexion button */
+.gNavBarButtonLink {
+  border: var(--var-debug-div);
+  background-color: #1a73e8;
+  color: #fff;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  padding: 10px 25px;
+  margin: 5px 20px;
+  border-radius: 4px;
+}
+
+.gNavBarButtonLink:hover {
+  cursor: pointer;
+  opacity: 80%;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+/**************************************************/
+/* GENERIC SECTION(S) (Usefulness to be tested ?) */
+/**************************************************/
+
+section {
+  border: var(--var-debug-div);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+/***************************************************************/
+/* EMPTY SECTION BETWEEN HEADER/NAV AND LOGO (VERTICAL SPACER) */
+/***************************************************************/
+
+/* Empty vertical spacer sometimes used to display additional info */
+.gSectionEmpty {
+  border: var(--var-debug-div);
+  display: flex;
+  height: 10vh;
+  width: 100%;
+}
+
+/****************/
+/* LOGO SECTION */
+/****************/
+
+/* Logo container */
+.gSectionLogo {
+  border: var(--var-debug-div);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 20vh;
+}
+
+/* Logo image itself */
+.gSectionLogo img {
+  border: var(--var-debug-div);
+  max-height: 100%;
+  max-width: 100%;
+  height: 15vh;
+  width: auto;
+  object-fit: contain;
+  object-position: center bottom;
+}
+
+/******************/
+/* SEARCH SECTION */
+/******************/
+
+/* Search Section higher level */
+.gSectionSearchForm {
+  border: var(--var-debug-div);
+  height: 25vh;
+}
+
+/* Search Container */
+.gSectionSearchContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  vertical-align: middle;
+  align-items: center;
+  object-position: center;
+  border: 0.6px solid rgba(128, 128, 128, 0.5);
+  border-radius: 24px;
+  height: 50px;
+  width: 100vh;
+  margin: 20px;
+}
+
+.gSectionSearchContainer:hover {
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Magnifier icon - static */
+.gSectionSearchMagnifier {
+  border: var(--var-debug-div);
+  opacity: 75%;
+  width: 5%;
+  padding-left: 5px;
+}
+
+/* Search Input Container */
+.gSectionSearchInput {
+  border: var(--var-debug-div);
+  width: 85%;
+}
+
+/* Search Input Fild Itself */
+.gSectionSearchContainer input {
+  border: var(--var-debug-div);
+  width: 100%;
+  min-height: 48px;
+  font-size: 16px;
+}
+
+.gSectionSearchContainer input:focus {
+  border: var(--var-debug-div);
+  outline: none;
+}
+
+/* Close icon - Hidden by default > Displayed when input not empty */
+.gSectionSearchClose {
+  border: var(--var-debug-div);
+  border-right: 0.8px solid rgba(128, 128, 128, 0.5);
+  opacity: 0%;
+  width: 5%;
+}
+
+/* Mic icon*/
+.gSectionSearchVocal {
+  border: var(--var-debug-div);
+  width: 5%;
+  margin-left: 5px;
+}
+
+.gSectionSearchVocal img {
+  width: 20px;
+}
+
+/* Search buttons */
+.gSectionSearchButtons {
+  border: var(--var-debug-div);
+  margin: 0% 30%;
+}
+
+.gSearchButton {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  color: #3c4043;
+  margin: 11px 4px;
+  padding: 0 16px;
+  height: 36px;
+  min-width: 54px;
+  text-align: center;
+  cursor: pointer;
+  user-select: none;
+}
+
+.gSearchButton:hover {
+  border-color: #dadce0;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.gSearchButton:focus {
+  border-color: #4285f4;
+}
+
+/****************************************/
+/* COMPLEMENTARY INFO SECTION (SPACER?) */
+/****************************************/
+
+/* Empty vertical spacer sometimes used to display additional info */
+.gSectionComplementaryInfo {
+  border: var(--var-debug-div);
+  font-family: arial, sans-serif;
+  color: #202124;
+  display: flex;
+  flex-direction: column;
+  height: 20vh;
+}
+
+.gSectionComplementaryInfo a {
+  text-decoration: none;
+}
+
+.gSectionComplementaryInfo a:hover {
+  text-decoration: underline;
+}
+
+/**********/
+/* FOOTER */
+/**********/
+footer {
+  border: var(--var-debug-div);
+  background-color: #f2f2f2;
+  color: #70757a;
+  height: auto;
+}
+
+.gFooterUpper {
+  border: var(--var-debug-div);
+  font-size: 15px;
+  display: block;
+  border-bottom: 0.8px solid #dadce0;
+  padding: 15px 30px;
+}
+
+.gFooterLower {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px 20px;
+}
+
+.gFooterLower a {
+  color: #70757a;
+  text-decoration: none;
+  padding: 15px;
+}
+
+.gFooterLower a:hover {
+  text-decoration: underline;
+}
+
+.gFooterLowerLeft {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gFooterLowerMiddle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gFooterLowerMiddle img {
+  height: 14px;
+  align-self: center;
+}
+
+.gFooterLowerRight {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Google Search Setup Menu (display on "Paramètre" click) */
+.gFooterSetupMenu {
+  display: none;
+  flex-direction: row;
+  position: absolute;
+  right: 20px;
+  bottom: 50px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border: 1px solid #000;
+}
+
+.gFooterSetupMenu a {
+  text-decoration: none;
+  color: #70757a;
+}
+
+.gFooterSetupMenu li {
+  list-style-type: none;
+  margin: 15px 5px;
+}
+/*********************************************/
+/*                                           */
+/*               END OF CODE                 */
+/*                                           */
+/*********************************************/
